@@ -1,0 +1,19 @@
+"use strict";
+//Arrays
+
+count destinations = ["Beach", "Mountain","City"];
+count restaurants = ["Italian","Mexican","Japanese"];
+count transportation = ["Car", "Bus","Train"];
+count entertainment = ["Museum","Concert","Park"];
+
+// Function
+
+function generateRandomTrip(){
+    const trip = {
+        destination: getRandomElement(destinations),
+        restaurant: getRandomElement(restaurants),
+        transport: getRandomElement(transportation),
+        entertainment: getRandomElement(entertainment),
+    };
+    return trip;
+}
